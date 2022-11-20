@@ -1,0 +1,26 @@
+<annotation>
+	<folder>collectedImages</folder>
+	<filename>410.jpg</filename>
+	<path>C:\Users\rhodr\OneDrive\Área de Trabalho\mask-and-cap-detector\RealTimeObjectDetection\Tensorflow\workspace\images\collectedImages\410.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>908</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>without_mask_and_cap</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>205</xmin>
+			<ymin>79</ymin>
+			<xmax>407</xmax>
+			<ymax>396</ymax>
+		</bndbox>
+	</object>
+</annotation>

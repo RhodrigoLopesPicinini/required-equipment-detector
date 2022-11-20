@@ -1,0 +1,8 @@
+item { 
+	name:'without_mask_and_cap'
+	id:1
+}
+item { 
+	name:'with_mask_and_cap'
+	id:2
+}
