@@ -1,0 +1,1 @@
+"# required-equipment-detector" 
