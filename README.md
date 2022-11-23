@@ -69,6 +69,10 @@ Após a instalação estiver concluída...
 
 ## Requisitos do projeto
 ---   
+- Como funciona?
+> O algoritmo deve começar um loop de detecção, onde a pessoa que estiver sem máscara, se ficar por um certo período de tempo sendo detectado, um som deve tocar como aviso de acesso não garantido.  
+
+> Caso a pessoa esteja utilizando o equipamento correto, após um certo período de tempo sendo detectado pela câmera, um som de primeiro acesso garantido, deve tocar. Passando para o próximo e último passo, o sistema irá pedir a visualização do crachá, se conter a cor e QRcode registrado no sistema, o acesso deve ser liberado e imprimir a data de acesso juntamente com o nome da pessoa.
 
 - Print do log do terminal 
 > ![logValidacao](assets/imgs/log.jpg)  
@@ -76,6 +80,9 @@ Após a instalação estiver concluída...
 - Prints do reconhecimento facial  
 > ![noMaskAndCap](assets/imgs/detection1.jpg)
 > ![maskAndCap](assets/imgs/detection2.jpg)  
+
+- Exemplo de crachá
+> <img src="assets/imgs/cracha.png" alt="tensorflow" target="_blank" href="https://www.tensorflow.org/?hl=pt-br"  width="160"/>
 
 - Vídeo demonstrativo do algoritmo
 > https://youtu.be/nLw2Z6Uyq68
