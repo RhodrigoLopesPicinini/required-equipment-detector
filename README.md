@@ -8,9 +8,11 @@ Em mais detalhes, desenvolvemos um algoritmo simples para simular um sistema, po
 ## Tecnologias utilizadas
 ---
 ### Principais tecnologias
-<img src="imgs/tensorflow.png" alt="tensorflow" target="_blank" href="https://www.tensorflow.org/?hl=pt-br"  width="110"/>
-<img src="imgs/opencv.png" alt="opencv" target="_blank" href="https://opencv.org/" width="100"/>
-<img src="imgs/python.png" alt="python" target="_blank" href="https://www.python.org/" width="100"/>
+<p float="left">
+    <img src="assets/imgs/tensorflow.png" alt="tensorflow" target="_blank" href="https://www.tensorflow.org/?hl=pt-br"  width="110"/>
+    <img src="assets/imgs/opencv.png" alt="opencv" target="_blank" href="https://opencv.org/" width="100"/>
+    <img src="assets/imgs/python.png" alt="python" target="_blank" href="https://www.python.org/" width="100"/>
+</p>
 
 #### Pacotes
 > [Lista de requerimentos](requirements.txt)
@@ -42,11 +44,11 @@ Instalar Protocol Buffers
 > 4. Adicionar às variáveis de ambiente
 
 Instalar TensorFlow Object Detection API  
-> 1. Insira a pasta models dentro do repositório clonado
+> 1. Insira a pasta [models](https://github.com/tensorflow/models) dentro do repositório clonado
 > 2. Abra um terminal dentro da pasta
 > 3. Vá para: ..\models\research\
 > 4. Execute: protoc object_detection/protos/*.proto --python_out=.  
-> 5. Execute: copy ..\models\research\packages\tf2\setup.py
+> 5. Execute: copy ..\models\research\packages\tf2\setup.py .
 > 6. Execute: python -m pip install .
 
 Instalar os pacotes restantes  
@@ -61,42 +63,36 @@ Após a instalação estiver concluída...
 > 1. Vá para a pasta clonada deste repositório
 > 2. Certifique-se de possuir uma câmera ativa
 > 3. Execute o arquivo [detection.py](detection.py)  
-> 3.1. python detection.py
+```vim
+    python detection.py
+```
 
 ## Requisitos do projeto
---- 
-- Técnicas de processamento de imagens utilizadas:  
-1. [Algoritmo de detecção de cor e QRcode](badgeDetector.py)
-```python
-    ...
-    8  hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-    ...
-    13 gray = cv2.cvtColor(result, cv2.COLOR_BGR2GRAY)
-```
-- Treino do TensorFlow  
-> ...
-- Print do log do terminal 
-> ![logValidacao](imgs/log.jpg)  
-- Print do reconhecimento facial  
->...  
+---   
 
-- Binarização e detecção de bordas, aplicando correção morfológica nas imagens.  
-> ...  
-- Detecção de cores  
-> ...
+- Print do log do terminal 
+> ![logValidacao](assets/imgs/log.jpg)  
+
+- Prints do reconhecimento facial  
+> ![noMaskAndCap](assets/imgs/detection1.jpg)
+> ![maskAndCap](assets/imgs/detection2.jpg)  
+
+- Vídeo demonstrativo do algoritmo
+> https://youtu.be/nLw2Z6Uyq68
+
 
 ## Colaboradores/Integrantes
 ---
 Autores: Rhodrigo Lopes Picinini (1125147) e Tomás Biasotto (1125129)
-Colaborador: Marcos do Santos
+Colaborador: Marcos R. Santos
 
 ## Referência/Fontes
 ---
 Repositório utilizado para o treino de detecção via TensorFlow Object Detection API:
 https://github.com/nicknochnack/RealTimeObjectDetection
 
-Repositório utilizado para a rotulação das imagens de treino
+Repositório utilizado para a rotulação das imagens de treino:
 https://github.com/heartexlabs/labelImg
 
-Repositório para a instalação das dependências do Tensorflow Object Detection API
+Repositório para a instalação das dependências do Tensorflow Object Detection API:
 https://github.com/tensorflow/models
